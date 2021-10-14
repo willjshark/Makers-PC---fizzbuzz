@@ -1,14 +1,12 @@
 def fizzbuzz(number)
-  (1..number).each do |x|
-    if x % 3 == 0 && x % 5 == 0
-      puts "fizzbuzz"
-    elsif x % 3 == 0
-      puts "fizz"
-    elsif x % 5 == 0
-      puts "buzz"
-    else
-      puts x
-    end
+  if number % 3 == 0 && number % 5 == 0
+    puts "fizzbuzz"
+  elsif number % 3 == 0
+    puts "fizz"
+  elsif number % 5 == 0
+    puts "buzz"
+  else
+    return number
   end
 end
-fizzbuzz(20)
+fizzbuzz(10)
